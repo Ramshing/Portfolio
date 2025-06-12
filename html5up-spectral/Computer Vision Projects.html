@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>Video Popup Modal</title>
+		<style>
+			/* Modal overlay */
+			.modal {
+			  display: none;
+			  position: fixed;
+			  z-index: 1000;
+			  left: 0;
+			  top: 0;
+			  width: 100%;
+			  height: 100%;
+			  overflow: auto;
+			  background-color: rgba(0,0,0,0.7);
+			}
+
+			/* Modal content */
+			.modal-content {
+			  position: relative;
+			  margin: 10% auto;
+			  padding: 0;
+			  width: 640px;
+			  max-width: 90%;
+			  background-color: #fff;
+			  border-radius: 10px;
+			  overflow: hidden;
+			}
+
+			/* Close button */
+			.close {
+			  color: #aaa;
+			  position: absolute;
+			  top: 10px;
+			  right: 20px;
+			  font-size: 28px;
+			  font-weight: bold;
+			  cursor: pointer;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: red;
+			}
+
+			video {
+			  display: block;
+			  width: 100%;
+			  height: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+		<div id="page-wrapper">
+
+			<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html">Computer Vision Projects</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="special">
+							<a href="#menu" class="menuToggle"><span>Menu</span></a>
+							<div id="menu">
+								<ul>
+									<li><a href="index.html">About</a></li>
+									<li><a href="generic.html">Data Science Projects</a></li>
+									<li><a href="Embedded_Projects.html">Embedded and IOT Projects</a></li>
+									<li><a href="Computer Vision Projects.html">Computer Vision Projects</a></li>
+									<li><a href="elements.html">Skills and Certifications</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- Main -->
+			<article id="main">
+				<header>
+					<h2>Computer Vision Projects</h2>
+					<p>Computer Vision and AI</p>
+				</header>
+				<section class="wrapper style5">
+					<div class="inner">
+
+						<ul>
+							<li><a href="https://github.com/Ramshing/Car_Detection_and_Counting"><h3>Car Detection and Counting - <a href="#" onclick="openModal0()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal0()">×</span>
+								<video id="demoVideo" controls>
+									<source src="video/car_video_count.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image left"><img src="images/car_counting_image.png" alt="" style="float: left; margin-right: 20px; width: 400px; height: auto;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b> Developed a system to automatically count vehicles in real-time using computer vision, enabling efficient traffic monitoring and analysis.</li><br />
+							<li><b>Technology:</b> Utilized OpenCV and Python, with object detection models like YOLO, to identify and track cars in video feeds or images or in live streaming</li><br />
+							<li><b>Implementation:</b> Processed video streams or images to detect vehicles, applied bounding boxes, and implemented a counting mechanism based on movement across defined regions.</li><br />
+							<li><b>Applications:</b> Supports urban planning, traffic management, and smart city initiatives by providing accurate vehicle count data for analysis and decision-making.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Real-Time Processing <br /><b>Libraries and Frameworks Used:</b> OpenCV, YOLO, NumPy, Matplotlib</p>
+
+						<hr />
+
+						<ul>
+							<li><a href="https://github.com/Ramshing/Wildlife_Elephants_Detection"><h3>Wildlife Elephant Detection - <a href="#" onclick="openModal1()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal1" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal1()">×</span>
+								<video id="demoVideo1" controls>
+									<source src="video/elephants_detection.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image right"><img src="images/elephants_det.png" alt="" style="float: left; margin-right: 20px; width: 400px; height: auto;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b> Built a computer vision system to detect elephants in two distinct environments—forests and roadsides—using a customized YOLOv8 model for wildlife conservation and human-elephant conflict prevention.</li><br />
+							<li><b>Dataset:</b> Curated a dataset of 500–600 images via Roboflow, annotated for two classes: elephants in forest settings and elephants on roadsides, ensuring robust training data.</li><br />
+							<li><b>Technology:</b> Leveraged YOLOv8 for real-time object detection, customized through transfer learning to accurately identify elephants in diverse scenarios.</li><br />
+							<li><b>Implementation:</b> Trained the model on the annotated dataset, optimizing for high accuracy in detecting elephants under varying lighting, backgrounds, and occlusions in forests and roadsides.</li><br />
+							<li><b>Applications:</b> Supports wildlife monitoring, early warning systems for road safety, and conservation efforts by providing reliable detection to mitigate human-elephant encounters.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Deep Learning, Data Annotation, Roboflow <br /><b>Libraries and Frameworks Used:</b> OpenCV, TensorFlow, NumPy, Matplotlib</p>
+
+						<hr />
+
+						<ul>
+							<li><a href="https://github.com/Ramshing/Volume_control_by_gesture"><h3>Volume Control using Gesture - <a href="#" onclick="openModal2()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal2" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal2()">×</span>
+								<video id="demoVideo2" controls>
+									<source src="video/volume_control.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image left"><img src="images/volume_control_image.png" alt="" style="float: left; margin-right: 20px; width: 400px; height: auto;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b> Developed a touchless volume control system using hand gesture recognition, enabling intuitive audio adjustments through computer vision.</li><br />
+							<li><b>Technology:</b> Utilized OpenCV and MediaPipe for real-time hand tracking and gesture detection, integrated with system audio controls via Python.</li><br />
+							<li><b>Implementation:</b> Detected specific hand gestures (e.g., raising/lowering hand or finger movements) to adjust volume levels, mapping gestures to predefined module(pycaw)</li><br />
+							<li><b>Applications:</b> Enhances user experience in smart devices, accessibility tools, and contactless interfaces, ideal for public kiosks or home automation systems.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Gesture Recognition, Real-Time Processing <br /><b>Libraries and Frameworks Used:</b> OpenCV, MediaPipe, Pycaw, NumPy</p>
+
+						<hr />
+
+						<ul>
+							<li><a href="https://github.com/Ramshing/Face_and_Emotion_Detection"><h3>Face and Emotion Detection - <a href="#" onclick="openModal3()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal3" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal3()">×</span>
+								<video id="demoVideo3" controls>
+									<source src="video/face_emotion.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image right"><img src="images/face_emotion.png" alt="" style="float: left; margin-right: 20px; width: 400px; height: auto;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b> Created a system to detect human faces and recognize emotions in real-time using computer vision, enabling applications in human-computer interaction and sentiment analysis.</li><br />
+							<li><b>Technology:</b> Employed OpenCV for face detection and a deep learning model(FER) to classify emotions such as happy, sad, angry, or neutral.</li><br />
+							<li><b>Implementation:</b> Processed video or image inputs to locate faces, extracted facial features, and predicted emotions with high accuracy using trained models.</li><br />
+							<li><b>Applications:</b> Supports use cases in mental health monitoring, customer feedback analysis, and interactive systems like virtual assistants or gaming.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Deep Learning, Emotion Recognition <br /><b>Libraries and Frameworks Used:</b> OpenCV, TensorFlow, Keras, NumPy, FER, mediapipe, Flask, flask_socketio, Reactjs</p>
+
+						<hr />
+
+						<ul>
+							<li><a href="https://github.com/Ramshing/Smart_Home_Automation"><h3>Smart Home Automation - <a href="#" onclick="openModal4()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal4" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal4()">×</span>
+								<video id="demoVideo4" controls>
+									<source src="video/smart_home_automation.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image left"><img src="images/smart_home.png" alt="" style="float: left; margin-right: 20px; width: 400px; height: auto;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b> Developed a system to control light brightness using hand gestures, leveraging Arduino and Python for a responsive and interactive lighting solution.</li><br />
+							<li><b>Technology:</b> Utilized Arduino microcontroller to manage LED brightness via PWM (Pulse Width Modulation) and Python for serial communication to send control signals.</li><br />
+							<li><b>Implementation:</b> Programmed Arduino to adjust LED brightness based on input signals received from a Python script, which processed user inputs or sensor data to determine desired brightness levels.</li><br />
+							<li><b>Applications:</b> Enables energy-efficient lighting control for smart homes, mood lighting systems, or interactive installations, enhancing user comfort and customization.</li><br />
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Gesture Recognition, Real-Time Tracking, arduino <br /><b>Libraries and Frameworks Used:</b> OpenCV, MediaPipe, NumPy, Serial</p>
+
+						<hr />
+					</div>
+				</section>
+			</article>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<ul class="icons">
+					<li><a href="https://www.linkedin.com/in/dinesh-ram-k-229010168/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+					<li><a href="https://github.com/Ramshing" class="icon brands fa-github"><span class="label">Github</span></a></li>
+					<li><a href="https://medium.com/@ramkdinesh" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+					<li><a href="#" class="icon solid fa-Email"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>© Untitled</li><li>Gmail: <a href="dnshram013@gmail.com">dnshram013@gmail.com</a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<script>
+			// Function to open a modal
+			function openModal(modalId, videoId) {
+				const modal = document.getElementById(modalId);
+				const video = document.getElementById(videoId);
+				modal.style.display = "block";
+				video.currentTime = 0; // Start from beginning
+				video.play();
+			}
+
+			// Function to close a modal
+			function closeModal(modalId, videoId) {
+				const modal = document.getElementById(modalId);
+				const video = document.getElementById(videoId);
+				modal.style.display = "none";
+				video.pause();
+				video.currentTime = 0;
+			}
+
+			// Specific open functions for each modal
+			function openModal0() { openModal("videoModal", "demoVideo"); }
+			function openModal1() { openModal("videoModal1", "demoVideo1"); }
+			function openModal2() { openModal("videoModal2", "demoVideo2"); }
+			function openModal3() { openModal("videoModal3", "demoVideo3"); }
+			function openModal4() { openModal("videoModal4", "demoVideo4"); }
+
+			// Specific close functions for each modal
+			function closeModal0() { closeModal("videoModal", "demoVideo"); }
+			function closeModal1() { closeModal("videoModal1", "demoVideo1"); }
+			function closeModal2() { closeModal("videoModal2", "demoVideo2"); }
+			function closeModal3() { closeModal("videoModal3", "demoVideo3"); }
+			function closeModal4() { closeModal("videoModal4", "demoVideo4"); }
+
+			// Single window.onclick handler for all modals
+			window.onclick = function(event) {
+				const modals = [
+					{ modalId: "videoModal", videoId: "demoVideo" },
+					{ modalId: "videoModal1", videoId: "demoVideo1" },
+					{ modalId: "videoModal2", videoId: "demoVideo2" },
+					{ modalId: "videoModal3", videoId: "demoVideo3" },
+					{ modalId: "videoModal4", videoId: "demoVideo4" }
+				];
+
+				modals.forEach(({ modalId, videoId }) => {
+					const modal = document.getElementById(modalId);
+					const video = document.getElementById(videoId);
+					if (event.target === modal) {
+						modal.style.display = "none";
+						video.pause();
+						video.currentTime = 0;
+					}
+				});
+			}
+		</script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

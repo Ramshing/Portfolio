@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Projects</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<title>Video Popup Modal</title>
+		<style>
+			/* Modal overlay */
+			.modal {
+			  display: none;
+			  position: fixed;
+			  z-index: 1000;
+			  left: 0;
+			  top: 0;
+			  width: 100%;
+			  height: 100%;
+			  overflow: auto;
+			  background-color: rgba(0,0,0,0.7);
+			}
+
+			/* Modal content */
+			.modal-content {
+			  position: relative;
+			  margin: 10% auto;
+			  padding: 0;
+			  width: 640px;
+			  max-width: 90%;
+			  background-color: #fff;
+			  border-radius: 10px;
+			  overflow: hidden;
+			}
+
+			/* Close button */
+			.close {
+			  color: #aaa;
+			  position: absolute;
+			  top: 10px;
+			  right: 20px;
+			  font-size: 28px;
+			  font-weight: bold;
+			  cursor: pointer;
+			}
+
+			.close:hover,
+			.close:focus {
+			  color: red;
+			}
+
+			video {
+			  display: block;
+			  width: 100%;
+			  height: auto;
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Embedded_IOT Projects</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">About</a></li>
+											<li><a href="generic.html">Data Science Projects</a></li>
+											<li><a href="Embedded_Projects.html">Embedded and IOT Projects</a></li>
+											<li><a href="Computer Vision Projects.html">Computer Vision Projects</a></li>
+											<li><a href="elements.html">Skills and Certifications</a></li>
+											
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Embedded System Projects</h2>
+							<p>Embedded And IOT</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<ul>
+							<li><a href="https://github.com/Ramshing/Car_Detection_and_Counting"><h3>RC car control using esp8266 wifi - <a href="#" onclick="openModal0()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal0()">×</span>
+								<video id="demoVideo" controls>
+									<source src="video/RC car wifi control.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image left"><img src="images/RC car.jpeg" alt="" style="float: left; margin-right: 20px; width: 250px; height: 250px;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b>Developed a WiFi-controlled RC car using the ESP8266 module to enable remote operation via a smartphone</li><br />
+							<li><b>Technology:</b>ESP8266 (NodeMCU), L298N motor driver, Arduino IDE, Android app, HTML/JavaScript (for web interface), Li-ion battery.</li><br />
+							<li><b>Implementation:</b>Hardware: Modified an RC car by integrating an ESP8266 NodeMCU and L298N motor driver to control DC motors for movement and steering. Powered by a LiPo battery.
+Software: Programmed ESP8266 using Arduino IDE to create a WiFi access point (AP) or connect to an existing network (STA). Implemented HTTP server for command processing (e.g., forward, backward, left, right).
+Control: Developed a web-based interface or used an Android app to send HTTP commands to the ESP8266, controlling motor speed via PWM signals.</li><br />
+							<li><b>Applications:</b>Enables smartphone-based control of the RC car over WiFi, offering customizable commands, speed control, and potential for additional features like real-time telemetry or camera integration.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Object Detection, Real-Time Processing <br /><b>Libraries Used:</b> OpenCV, YOLO, NumPy, Matplotlib</p>
+
+						<hr />
+								<ul>
+							<li><a href="https://github.com/Ramshing/Car_Detection_and_Counting"><h3>Voice Controlled Car - <a href="#" onclick="openModal1()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal1" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal1()">×</span>
+								<video id="demoVideo1" controls>
+									<source src="video/Voice control RC car.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image right"><img src="images/RC car.jpeg" alt="" style="float: left; margin-right: 20px; width: 250px; height: 250px;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b>Designed a voice-controlled car to enable hands-free operation using voice commands, enhancing accessibility and interactivity for remote control applications.</li><br />
+							<li><b>Technology:</b>ESP8266 (NodeMCU), L298N motor driver, Arduino IDE, Android app with speech recognition (e.g., Tasker or custom), HTML/JavaScript (web interface fallback), Li-ion battery.</li><br />
+							<li><b>Implementation:</b> <b>Hardware:</b> Integrated ESP8266 NodeMCU and L298N motor driver into an RC car chassis to control DC motors for movement. Powered by a LiPo battery.
+<b>Software:</b> Programmed ESP8266 using Arduino IDE to establish a WiFi access point or connect to a network. Implemented an HTTP server to process voice-converted commands.
+<b>Voice Control:</b> Utilized an Android app with speech recognition to convert voice commands (e.g., "go forward," "turn left") into HTTP requests sent to the ESP8266. Added a web interface as a fallback.</li><br />
+							<li><b>Applications:</b>Allows hands-free car control via voice commands, improving user experience for hobbyists, accessibility applications, or IoT projects.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, Computer Vision, Object Detection, Real-Time Processing <br /><b>Libraries Used:</b> OpenCV, YOLO, NumPy, Matplotlib</p>
+
+						<hr />
+
+								<ul>
+							<li><a href="https://github.com/Ramshing/Car_Detection_and_Counting"><h3>AI Talking Robo - <a href="#" onclick="openModal2()">Project Video</a></h3></a></li>
+						</ul>
+						<!-- Modal structure -->
+						<div id="videoModal2" class="modal">
+							<div class="modal-content">
+								<span class="close" onclick="closeModal2()">×</span>
+								<video id="demoVideo2" controls>
+									<source src="video/AI Talking.mp4" type="video/mp4">
+									Your browser does not support the video tag.
+								</video>
+							</div>
+						</div>
+
+						<p><span class="image left"><img src="images/Talking robo AI.jpeg" alt="" style="float: left; margin-right: 20px; width: 250px; height: 250px;"/></span></p>
+
+						<ul>
+							<li><b>Objective:</b>Developed an AI-powered talking robot to enable interactive voice-based communication in real-time responses.</li><br />
+							<li><b>Technology:</b>Arduino uno, L298N motor driver, Arduino IDE, Android app with speech recognition (e.g., Google Speech-to-Text), Python, NLP libraries (e.g., NLTK), Li-ion battery;</li><br />
+							<li><b>Implementation:</b>The robot is built using an Arduino Uno to control MG996R servo motors for head rotation and hand shaking. Serial communication is established between the Arduino and an AI module (running on a PC or microcontroller with AI capability) to process user speech and generate responses. </li><br />
+							<li><b>Applications:</b>This AI robot can be used for educational demonstrations, STEM learning, reception bots, and interactive exhibitions. It helps students and audiences understand AI-human interaction, robotics control, and embedded system integration in a fun and practical way.</li>
+						</ul>
+
+						<p><b>Skills:</b> Python, arduino, Real-Time Processing <br /><b>Libraries Used:</b> pyaudio, pyttsx, speechify, Serial, vosk, genai, pygame</p>
+
+						<hr />
+			
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/dinesh-ram-k-229010168/" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+							<li><a href="https://github.com/Ramshing" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a href="https://medium.com/@ramkdinesh" class="icon brands fa-medium"><span class="label">Medium</span></a></li>
+							<li><a href="#" class="icon solid fa-Email"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Untitled</li><li>Gmail: <a href="dnshram013@gmail.com">dnshram013@gmail.com</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script>
+				// Function to open a modal
+				function openModal(modalId, videoId) {
+					const modal = document.getElementById(modalId);
+					const video = document.getElementById(videoId);
+					modal.style.display = "block";
+					video.currentTime = 0; // Start from beginning
+					video.play();
+				}
+
+				// Function to close a modal
+				function closeModal(modalId, videoId) {
+					const modal = document.getElementById(modalId);
+					const video = document.getElementById(videoId);
+					modal.style.display = "none";
+					video.pause();
+					video.currentTime = 0;
+				}
+
+				// Specific open functions for each modal
+				function openModal0() { openModal("videoModal", "demoVideo"); }
+				function openModal1() { openModal("videoModal1", "demoVideo1"); }
+				function openModal2() { openModal("videoModal2", "demoVideo2"); }
+				function openModal3() { openModal("videoModal3", "demoVideo3"); }
+				function openModal4() { openModal("videoModal4", "demoVideo4"); }
+
+				// Specific close functions for each modal
+				function closeModal0() { closeModal("videoModal", "demoVideo"); }
+				function closeModal1() { closeModal("videoModal1", "demoVideo1"); }
+				function closeModal2() { closeModal("videoModal2", "demoVideo2"); }
+				function closeModal3() { closeModal("videoModal3", "demoVideo3"); }
+				function closeModal4() { closeModal("videoModal4", "demoVideo4"); }
+
+				// Single window.onclick handler for all modals
+				window.onclick = function(event) {
+					const modals = [
+						{ modalId: "videoModal", videoId: "demoVideo" },
+						{ modalId: "videoModal1", videoId: "demoVideo1" },
+						{ modalId: "videoModal2", videoId: "demoVideo2" },
+						{ modalId: "videoModal3", videoId: "demoVideo3" },
+						{ modalId: "videoModal4", videoId: "demoVideo4" }
+					];
+
+					modals.forEach(({ modalId, videoId }) => {
+						const modal = document.getElementById(modalId);
+						const video = document.getElementById(videoId);
+						if (event.target === modal) {
+							modal.style.display = "none";
+							video.pause();
+							video.currentTime = 0;
+						}
+					});
+				}
+			</script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
