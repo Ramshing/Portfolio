@@ -1,0 +1,257 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>RAG Based Projects</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<title>Video Popup Modal</title>
+	<style>
+		/* Modal overlay */
+		.modal {
+			display: none;
+			position: fixed;
+			z-index: 1000;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		/* Modal content */
+		.modal-content {
+			position: relative;
+			margin: 10% auto;
+			padding: 0;
+			width: 640px;
+			max-width: 90%;
+			background-color: #fff;
+			border-radius: 10px;
+			overflow: hidden;
+		}
+
+		/* Close button */
+		.close {
+			color: #aaa;
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			font-size: 28px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: red;
+		}
+
+		video {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+
+		/* Custom dark background override for RAG projects page */
+		.wrapper.style5 {
+			background-color: #2e3842; /* Dark charcoal matching the main theme */
+			color: #dfdfe3;            /* High-contrast light text */
+		}
+		.wrapper.style5 strong, .wrapper.style5 b {
+			color: #ffffff;            /* Pure white bold text */
+		}
+		.wrapper.style5 h2, .wrapper.style5 h3, .wrapper.style5 h4, .wrapper.style5 h5, .wrapper.style5 h6 {
+			color: #ffffff;            /* Pure white headers */
+		}
+		.wrapper.style5 hr {
+			border-color: rgba(255, 255, 255, 0.15); /* Light borders for dividers */
+		}
+		.wrapper.style5 a {
+			color: #21b2a6;            /* Theme teal for links */
+			border-bottom-color: rgba(33, 178, 166, 0.4);
+		}
+		.wrapper.style5 a:hover {
+			color: #ffffff;
+			border-bottom-color: transparent;
+		}
+		.wrapper.style5 h3 a {
+			color: #ffffff;
+			border-bottom: none;
+		}
+		.wrapper.style5 h3 a:hover {
+			color: #21b2a6;
+		}
+		/* Ensure modal content header close button looks correct */
+		.modal-content .close {
+			color: #aaa;
+		}
+		.modal-content .close:hover {
+			color: red;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html">RAG Based Projects</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
+							<ul>
+								<li><a href="index.html">About</a></li>
+								<li><a href="generic.html">Data Science Projects</a></li>
+								<li><a href="RAG Projects.html">RAG Based Projects</a></li>
+								<li><a href="Embedded_Projects.html">Embedded and IOT Projects</a></li>
+								<li><a href="Computer Vision Projects.html">Computer Vision Projects</a></li>
+								<li><a href="elements.html">Skills and Certifications</a></li>
+							</ul>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Main -->
+		<article id="main">
+			<header>
+				<h2>RAG Based Projects</h2>
+				<p>Retrieval-Augmented Generation & Generative AI</p>
+			</header>
+			<section class="wrapper style5">
+				<div class="inner">
+
+					<ul>
+						<li><a href="https://github.com/Ramshing/resume_chatbot_frontend">
+								<h3>Resume Chatbot - <a href="#" onclick="openModal0()">Project Video</a></h3>
+							</a></li>
+					</ul>
+					<!-- Modal structure -->
+					<div id="videoModal" class="modal">
+						<div class="modal-content">
+							<span class="close" onclick="closeModal0()">×</span>
+							<video id="demoVideo" controls>
+								<source src="video/resume_chatbot_demo.mp4" type="video/mp4">
+								Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+
+					<p><span class="image left"><img src="images/Resume_chatbot.png" alt=""
+								style="float: left; margin-right: 20px; width: 400px; height: auto;" /></span></p>
+
+					<ul>
+						<li><b>Objective:</b> Developed an interactive Retrieval-Augmented Generation (RAG) chatbot
+							designed to parse resumes and answer recruitment queries dynamically in real-time.</li>
+						<br />
+						<li><b>Technology:</b> Built with LangChain, ChromaDB/FAISS vector databases, OpenAI GPT models
+							(or open-source alternatives), with a React frontend and Flask backend framework.</li><br />
+						<li><b>Implementation:</b> Embedded resume text chunks using specialized sentence-transformer
+							models, indexed them for semantic similarity search, and constructed conversational search
+							chains with memory.</li><br />
+						<li><b>Applications:</b> Serves as an autonomous recruitment agent on digital portfolios,
+							enabling hiring managers to query qualifications, skills, and background details instantly.
+						</li>
+					</ul>
+
+					<p><b>Skills:</b> Python, Large Language Models (LLMs), Vector DB, RAG Pipelines, API Integration
+						<br /><b>Libraries and Frameworks Used:</b> LangChain, ChromaDB, OpenAI API, Flask, React, PyPDF
+					</p>
+
+				</div>
+			</section>
+		</article>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/dinesh-ram-k-229010168/" class="icon brands fa-linkedin"><span
+							class="label">LinkedIn</span></a></li>
+				<li><a href="https://github.com/Ramshing" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="https://medium.com/@ramkdinesh" class="icon brands fa-medium"><span
+							class="label">Medium</span></a></li>
+				<li><a href="#" class="icon solid fa-Email"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>© Untitled</li>
+				<li>Gmail: <a href="dnshram013@gmail.com">dnshram013@gmail.com</a></li>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script>
+		// Function to open a modal
+		function openModal(modalId, videoId) {
+			const modal = document.getElementById(modalId);
+			const video = document.getElementById(videoId);
+			modal.style.display = "block";
+			video.currentTime = 0; // Start from beginning
+			video.play();
+		}
+
+		// Function to close a modal
+		function closeModal(modalId, videoId) {
+			const modal = document.getElementById(modalId);
+			const video = document.getElementById(videoId);
+			modal.style.display = "none";
+			video.pause();
+			video.currentTime = 0;
+		}
+
+		// Specific open functions for each modal
+		function openModal0() { openModal("videoModal", "demoVideo"); }
+		function openModal1() { openModal("videoModal1", "demoVideo1"); }
+
+		// Specific close functions for each modal
+		function closeModal0() { closeModal("videoModal", "demoVideo"); }
+		function closeModal1() { closeModal("videoModal1", "demoVideo1"); }
+
+		// Single window.onclick handler for all modals
+		window.onclick = function (event) {
+			const modals = [
+				{ modalId: "videoModal", videoId: "demoVideo" },
+				{ modalId: "videoModal1", videoId: "demoVideo1" }
+			];
+
+			modals.forEach(({ modalId, videoId }) => {
+				const modal = document.getElementById(modalId);
+				const video = document.getElementById(videoId);
+				if (event.target === modal) {
+					modal.style.display = "none";
+					video.pause();
+					video.currentTime = 0;
+				}
+			});
+		}
+	</script>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
